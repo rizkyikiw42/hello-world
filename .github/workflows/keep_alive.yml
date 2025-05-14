@@ -31,8 +31,8 @@ jobs:
         if: steps.determine_commit.outputs.should_commit == 'true'
         run: |
           for i in $(seq 1 ${{ steps.determine_commit.outputs.num_commits }}); do
-            git config --global user.email "tegeriamsafi@gmail.com"
-            git config --global user.name "jSqqrq1"
+            git config --global user.email "rizzikwann@gmail.com"
+            git config --global user.name "rizkyikiw42"
             echo "Random commit $i" >> commit_file.txt
             git add commit_file.txt
             git commit -m "Keep alive commit $i"
